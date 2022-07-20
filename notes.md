@@ -1,6 +1,10 @@
 Deployer: 0xacf4b2424d0b52ef0d634d2440f891f3a5abd9e0
-Deployed to: 0x3f133c2717e790277f5e553bb97e6f60515a8ad1
-Transaction hash: 0x7870546d09b635d310ef88c691cf7f055e56df064252ab4b4c693eef1dfd26fe
+
+Deployed to: 0xc05fa523779995824755e4380499b9d9797e6c33
+Transaction hash: 0xaf4f9463216918e2f852ef643f0b2df314cd1e6c5b022f80b5c9e28f17173984
+
 Gas usage: 393753
 One Gas: 0,000485 BRL
 Deploy Cost: 190,97 BRL
+
+gas usage for changing liq bucket: 24120

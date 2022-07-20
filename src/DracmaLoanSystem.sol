@@ -21,6 +21,15 @@ contract DracmaLoanSystem {
         manager = msg.sender;
     }
 
+    function modLiquidityBucket(int delta) public returns (int) {
+        liquidityBucket += delta;
+        return liquidityBucket;
+    }
+
+    function checkLiquidityBucket() public view returns (int) {
+        return liquidityBucket;
+    }
+
     function authority(address keycard) private view returns (bool){
         return keycard == manager;
     }
