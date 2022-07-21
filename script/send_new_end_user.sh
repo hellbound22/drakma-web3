@@ -1,0 +1,1 @@
+cast send 0xaa7414a0353fdcc9960faaaa511ccff5fc41e94e --rpc-url http://127.0.0.1:8545 --legacy -f 0xDA564c781185044e6cbe6Bc2132A22C5c8482a04 --private-key 0x3cbb1d72fee7fc1191669563d986cb6b2efb07f9cb12914481c7fd39336ec11f "newEndUser(address, int256)()" 0xF2892fAf31FD62Bc42522dDaBbCE89235d4f673C 100
