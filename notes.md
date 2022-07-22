@@ -10,6 +10,3 @@ Deploy Cost: 190,97 BRL
 
 gas usage for changing liq bucket: 24120
 gas usage for creating new user: 47121
-
-
-https://eips.ethereum.org/EIPS/eip-4626
