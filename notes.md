@@ -13,11 +13,3 @@ gas usage for creating new user: 47121
 
 
 https://eips.ethereum.org/EIPS/eip-4626
-
-int fator = 100;
-    int c = 1000 * fator;
-    int t_juros = 10;
-
-    int m = c*((1+t_juros)**2);
-
-    console.log(m);

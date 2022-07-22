@@ -1,45 +1,12 @@
 // SPDX-License-Identifier: GPL-3.0-only
 pragma solidity ^0.8.13;
 
+import "src/DrakmaBoardRoom.sol";
+
 contract DrakmaFiWeb3 {
-    // Self
-    address manager;
-    uint256 stakeBucket;
-    uint256 collateralHoldRef;
-    uint256 supplyRef;
-    uint8 ltv = 50;
-    uint8 sdr = 100; //  Standard daily rate = 10% (100 / 1000 = 0,1)
-
-    struct endUser {
-        uint256 wallet;
-        uint256 stake;
-        uint256 loanValue;
-        uint256 lastLoanTimestamp;
-        uint256 collateral;
-        bool sharkLock; // Blocks any actions until debts are repayed
-    }
-
-    mapping(address => endUser) endUserMap;
 
     constructor () {
         manager = msg.sender;
-    }
-
-    function modstakeBucket(uint256 delta) public returns (uint256) {
-        stakeBucket += delta;
-        return stakeBucket;
-    }
-
-    function checkSysState() public view returns (address, uint256, uint8) {
-        return (manager, stakeBucket, ltv);
-    }
-
-    function checkEndUser(address user) public view returns (endUser memory e) {
-        return endUserMap[user];
-    }
-
-    function authority(address keycard) private view returns (bool) {
-        return keycard == manager;
     }
 
     function newEndUser(address endUserAddress, uint256 initialWallet) public {
